@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>{{title}}</h1>
-        <h2>{{subtitle}}</h2>
+    <header id="header">
+        <div class="observedElement">
+            <h1>
+                {{title}}
+            </h1>
+            <h2>
+                {{subtitle}}
+            </h2>
     </header>
 
     <nav class="navigation">
@@ -20,7 +26,7 @@
             <li>
                 <a href="#about">about</a>
             </li>
-            <li><a href="#tech">tech</a></li>
+            <li><a href="#tech">skills</a></li>
             <li>
                 <a href="#projects">projects</a>
             </li>
