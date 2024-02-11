@@ -72,7 +72,15 @@ a {
   color: var(--font-color);
   text-decoration: none;
 }
+.in-text-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
+.in-text-link:hover {
+  color: var(--primary);
+  text-decoration-color: var(--accent);
+}
 @media screen and (max-width: 400px) {
   html {
     font-size: 12px;

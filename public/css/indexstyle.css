@@ -99,9 +99,7 @@ article {
   position: relative;
   gap: 1rem;
 }
-.projects-container p {
-  line-height: 1.5rem;
-}
+
 .projects-container section {
   padding: 2rem;
   border: 1px solid var(--border-color);
@@ -110,8 +108,14 @@ article {
   background-color: var(--card-background);
   scale: 1;
   transition: all 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
-
+.projects-container section .project-card-info-text {
+  line-height: 1.5rem;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
 .projects-container section:hover {
   scale: 1.02;
 }
@@ -128,6 +132,7 @@ article {
   display: flex;
   gap: 2rem;
   display: flex;
+  margin-top: 1.125rem;
 }
 .projects-container .screenshots img {
   width: calc(50% - 1rem);

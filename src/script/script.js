@@ -37,3 +37,30 @@ const navObserver = new IntersectionObserver(
 );
 
 navObserver.observe(headerElement);
+
+// add event listener for opening modal to project screenshots
+document.querySelectorAll("img.project-screenshot").forEach((element) => {
+  if (element) {
+    element.addEventListener("click", (event) => {
+      addModal(event);
+    });
+  }
+});
+
+const addModal = function (event) {
+  const projectsCard = document.getElementsByClassName("screenshots")[0];
+  const modalContainer = document.createElement("div");
+  const closeInfoText = document.createElement("p");
+  const imageClone = event.target.cloneNode(true);
+  // create modal
+  modalContainer.classList.add("modal-container");
+  modalContainer.appendChild(imageClone);
+  closeInfoText.innerText = "click to close";
+  modalContainer.appendChild(closeInfoText);
+  // add close modal on click event
+  modalContainer.addEventListener("click", (event) => {
+    projectsCard.removeChild(modalContainer);
+  });
+  // render modal
+  projectsCard.append(modalContainer);
+};
