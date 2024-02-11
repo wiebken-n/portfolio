@@ -15,16 +15,16 @@
 }
 
 :root {
-  --font-color: #f1f1f1;
-  --color-tech-items: #ffffff;
+  --font-color: hsl(0, 0%, 95%);
+  --color-tech-items: hsl(0, 0%, 100%);
   --background-tech-items: hsl(175, 35%, 35%);
-  --background-color: rgb(49, 53, 59);
-  --primary: #75bdb7;
-  --primary-dark: #428a84;
+  --background-color: hsl(216, 9%, 21%);
+  --primary: hsl(175, 35%, 60%);
+  --primary-dark: hsl(175, 35%, 40%);
   --primary-light: hsl(175, 35%, 70%);
   --primary-superlight: hsl(175, 35%, 90%);
-  --accent: #6053ac;
-  --accent-dark: #3a3267;
+  --accent: hsl(249, 35%, 50%);
+  --accent-dark: hsl(249, 35%, 30%);
   --border-color: hsl(0, 0%, 50%);
   --card-background: hsla(180, 27%, 4%, 0.205);
   --card-shadow: hsla(180, 28%, 13%, 0.377);
