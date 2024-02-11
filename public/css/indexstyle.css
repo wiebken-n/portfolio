@@ -28,12 +28,12 @@ article {
   margin-inline: auto;
   width: 600px;
   border: 1px solid var(--border-color);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px 0px var(--card-shadow);
   background-color: var(--card-background);
   display: grid;
-  gap: 1.5rem;
+  gap: 2.25rem;
   grid-template-columns: auto auto;
   position: relative;
 }
@@ -44,9 +44,16 @@ article {
   box-shadow: 0 0 10px 0px hsla(180, 28%, 13%, 0.377);
   margin: auto auto;
 }
-.about-content p {
+
+.about-content .about-text {
   margin-block: auto;
   line-height: 1.5rem;
+}
+
+.greeting-text {
+  margin-bottom: 1rem;
+  font-family: "JetBrainsMono";
+  margin-right: auto;
 }
 #tech {
   margin-inline: auto;
@@ -173,6 +180,10 @@ article {
   #about .about-content {
     width: 70vw;
     grid-template-columns: 1fr;
+  }
+
+  .greeting-text {
+    text-align: center;
   }
 
   #tech,

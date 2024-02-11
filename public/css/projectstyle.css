@@ -146,7 +146,7 @@
 }
 
 .modal-container img {
-  height: 700px;
+  height: 80vh;
   border-radius: 10px;
   position: fixed;
   top: 50%;
@@ -154,7 +154,10 @@
   transform: translate(-50%, -50%);
   box-shadow: 0 0 20px 2px black;
 }
-
+.modal-container .desktop-screenshot-img {
+  width: 800px;
+  height: auto;
+}
 .modal-container p {
   position: fixed;
   bottom: 1rem;
@@ -174,6 +177,10 @@
 @media screen and (max-width: 900px) {
   .screenshots {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .modal-container .desktop-screenshot-img {
+    width: 90vw;
   }
 }
 @media screen and (max-width: 700px) {
@@ -209,5 +216,18 @@
   }
   .screenshots {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal-container img {
+    width: 70vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal-container img {
+    width: 80vw;
   }
 }
