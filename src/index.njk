@@ -2,92 +2,108 @@
 title: "Wiebken Nagel"
 subtitle: "
 < junior frontend web developer />"
-layout: "base.njk"
+layout: "/base.njk"
 ---
-<div class="site-container">
 
-    <article id="about" class="observedElement">
-        <h3>about me</h3>
-        <div class="about-content">
-            <img src="./assets/img/profile-edited.png" alt="">
-            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt
-                ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut
-                aliquip ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id
-                est
-                laborum.</p>
-        </div>
+<header id="header" class="index-header">
+    <div class="observedElement">
+        <h1>
+            {{title}}
+        </h1>
+        <h2>
+            {{subtitle}}
+        </h2>
+</header>
+<main>
+    <div class="site-container">
 
-    </article>
+        <article id="about" class="observedElement">
+            <h3>about me</h3>
+            <div class="about-content">
+                <img src="./assets/img/profile-pic.webp" alt="">
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi
+                    ut
+                    aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu
+                    fugiat
+                    nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim
+                    id
+                    est
+                    laborum.</p>
+            </div>
 
-    <article id="tech" class="observedElement">
-        <h3>skills</h3>
-        <ul>
-            <li><img src="./assets/vue-logo.svg" alt="Vue.js logo"><span>Vue.js</span></li>
-            <li><img src="./assets/javascript-logo.svg" alt="JavaScript logo"><span>JavaScript</span></li>
-            <li><img src="./assets/html-logo.svg" alt="HTML logo"><span>HTML</span></li>
-            <li><img src="./assets/css-logo.svg" alt="CSS logo"><span>CSS</span></li>
-            <li><img src="./assets/primevue-logo.svg" alt="PrimeVue logo"><span>PrimeVue</span></li>
-            <li><img src="./assets/quasar-logo.svg" alt="Quasar logo"><span>Quasar</span></li>
-            <li><img src="./assets/supabase-logo.svg" alt="Supabase logo"><span>Supabase</span></li>
-            <li><img src="./assets/git-logo.svg" alt="Git logo"><span>Git</span></li>
-            <li><img src="./assets/vscode-logo.svg" alt="VS Code logo"><span>VS Code</span></li>
-        </ul>
-    </article>
+        </article>
 
-    <article id="projects" class="observedElement">
-        <h3>
-            projects </h3>
-        <div class="projects-container">
-            <section class="catherder">
-                <h4>Cat Herder</h4>
-                <p>Cat Herder is an app to facilitate taking care of cats and to improve communcation of important dates
-                    and facts with cat-sitters.</p>
-                <div class="screenshots">
-                    <img src="./assets/img/catherder-1.png" alt="screenshort of the main site of the Cat Herder app">
-                    <img src="./assets/img/catherder-2.png" alt="screenshort of the main site of the Cat Herder app">
-                </div>
-                <div class="project-links">
-                    <ul>
-                        <li><a href="">details</a></li>
-                        <li><a href="">visit app</a></li>
-                        <li><a href="">GitHub</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="Eden Sketch">
-                <h4>EdenSketch</h4>
-                <p>EdenSketch is an app to facilitate the planning of an vegetable garden over the course of each year.
-                </p>
-                <div class="screenshots">
-                    <img src="./assets/img/edensketch-1.png" alt="screenshort of the main site of the Cat Herder app">
-                    <img src="./assets/img/edensketch-2.png" alt="screenshort of the main site of the Cat Herder app">
-                </div>
-                <div class="project-links">
-                    <ul>
-                        <li><a href="">details</a></li>
-                        <li><a href="">visit app</a></li>
-                        <li><a href="">GitHub</a></li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    </article>
+        <article id="tech" class="observedElement">
+            <h3>skills</h3>
+            <ul>
+                <li><img src="/assets/vue-logo.svg" alt="Vue.js logo"><span>Vue.js</span></li>
+                <li><img src="/assets/javascript-logo.svg" alt="JavaScript logo"><span>JavaScript</span></li>
+                <li><img src="/assets/html-logo.svg" alt="HTML logo"><span>HTML</span></li>
+                <li><img src="/assets/css-logo.svg" alt="CSS logo"><span>CSS</span></li>
+                <li><img src="/assets/primevue-logo.svg" alt="PrimeVue logo"><span>PrimeVue</span></li>
+                <li><img src="/assets/quasar-logo.svg" alt="Quasar logo"><span>Quasar</span></li>
+                <li><img src="/assets/pinia-logo.svg" alt="Pinia logo"><span>Pinia</span></li>
+                <li><img src="/assets/vcalendar-logo.webp" alt="VCalendar logo"><span>VCalendar</span></li>
+                <li><img src="/assets/vite-logo.svg" alt="Vite logo"><span>Vite</span></li>
+                <li><img src="/assets/supabase-logo.svg" alt="Supabase logo"><span>Supabase</span></li>
+                <li><img src="/assets/git-logo.svg" alt="Git logo"><span>Git</span></li>
+                <li><img src="/assets/vscode-logo.svg" alt="VS Code logo"><span>VS Code</span></li>
+            </ul>
+        </article>
 
-    <article id="contact" class="observedElement">
-        <h3>contact</h3>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/wiebken-n/" target="_blank"><img src="./assets/github-logo.svg"
-                        fill="currentColor" alt="GitHub logo"></a></li>
-            <li><a href="https://github.com/wiebken-n" target="_blank"><img src="./assets/linkedin-logo.svg"
-                        alt="LinkedIn logo"></a></li>
-        </ul>
-    </article>
-</div>
+        <article id="projects" class="observedElement">
+            <h3>
+                projects </h3>
+            <div class="projects-container">
+                <section class="catherder">
+                    <h4>Cat Herder</h4>
+                    <p>Cat Herder is an app to facilitate taking care of cats and to improve communcation of important
+                        dates
+                        and facts with cat-sitters.</p>
+                    <div class="screenshots">
+                        <img src="./assets/img/catherder-1.webp"
+                            alt="screenshort of the main site of the Cat Herder app">
+                        <img src="./assets/img/catherder-2.webp"
+                            alt="screenshort of the main site of the Cat Herder app">
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="./catherder">details</a></li>
+                            <li><a href="https://cat-herder.netlify.app/" target="_blank">live app</a></li>
+                            <li><a href="https://github.com/wiebken-n/cat-herder" target="_blank">github</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="Eden Sketch">
+                    <h4>EdenSketch</h4>
+                    <p>EdenSketch is an app to facilitate the planning of an vegetable garden over the course of each
+                        year.
+                    </p>
+                    <div class="screenshots">
+                        <img src="./assets/img/edensketch-1.webp"
+                            alt="screenshort of the main site of the Cat Herder app">
+                        <img src="./assets/img/edensketch-2.webp"
+                            alt="screenshort of the main site of the Cat Herder app">
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="">details</a></li>
+                            <li><a href="">live app</a></li>
+                            <li><a href="">github</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+
+    </div>
+</main>

@@ -1,8 +1,9 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/normalize.css");
-  eleventyConfig.addPassthroughCopy("./src/style.css");
-  eleventyConfig.addPassthroughCopy("./src/script.js");
-  eleventyConfig.addWatchTarget("./src/style.css");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/script/");
+  eleventyConfig.addPassthroughCopy("src/assets/");
+  eleventyConfig.addWatchTarget("src/css/");
+  eleventyConfig.addWatchTarget("src/script/");
   return {
     dir: {
       input: "src",
