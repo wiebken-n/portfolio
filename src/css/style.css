@@ -10,8 +10,20 @@
 
 @font-face {
   font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "JostItalic";
+  src: url("/assets/fonts/Jost-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "JetBrainsMono";
   src: url("/assets/fonts/JetBrainsMono.ttf");
+}
+
+@font-face {
+  font-display: auto; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "JetBrainsMonoItalic";
+  src: url("/assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf");
 }
 
 :root {

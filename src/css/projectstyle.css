@@ -124,11 +124,19 @@
 .screenshots figure figcaption {
   margin-top: 0.5rem;
   text-align: left;
+  font-family: "JostItalic";
+  font-size: 0.9rem;
+  text-align: center;
 }
 .screenshots figure img {
   width: 100%;
   border-radius: 5px;
+  scale: 1;
   transition: all 200ms ease-in-out;
+}
+
+.screenshots figure img:hover {
+  scale: 1.025;
 }
 
 .screenshots .desktop-screenshot {
