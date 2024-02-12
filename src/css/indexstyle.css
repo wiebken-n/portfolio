@@ -208,6 +208,10 @@ article {
 }
 
 @media screen and (max-width: 600px) {
+  .index-header h1,
+  .index-header h2 {
+    width: 90vw;
+  }
   article {
     margin-top: 10vh;
   }
@@ -224,4 +228,7 @@ article {
   .projects-container {
     width: 90vw;
   }
+}
+
+@media screen and (max-width: 550px) {
 }
