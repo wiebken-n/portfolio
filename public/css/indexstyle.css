@@ -148,6 +148,14 @@ article {
   transition: all 200ms ease-in-out;
 }
 
+.preview-screenshot {
+  scale: 1;
+  cursor: pointer;
+}
+
+.preview-screenshot:hover {
+  scale: 1.025;
+}
 .project-links ul {
   display: flex;
   gap: 3rem;
@@ -228,7 +236,4 @@ article {
   .projects-container {
     width: 90vw;
   }
-}
-
-@media screen and (max-width: 550px) {
 }

@@ -1,3 +1,4 @@
+// adds intersection observer for scroll effects on elements of index
 document.querySelectorAll(".observedElement").forEach((element) => {
   if (element) {
     const observer = new IntersectionObserver(
@@ -20,6 +21,7 @@ const addObserver = (entries, element) => {
   });
 };
 
+// adds intersection observer for navigation styling change on scrolling down from top
 let headerElement = document.getElementById("header");
 let navElement = document.getElementsByClassName("navigation")[0];
 
@@ -75,3 +77,24 @@ const addModal = function (event) {
   // set focus on modal-image
   imageClone.focus();
 };
+
+// adds event for clicking on project preview screenshots on index -> route to project site
+const catherderScreenshots = document.querySelectorAll(".screenshot-catherder");
+catherderScreenshots.forEach((element) => {
+  if (element) {
+    element.addEventListener("click", (event) => {
+      window.location.href = "./catherder";
+    });
+  }
+});
+
+const edenSketchScreenshots = document.querySelectorAll(
+  ".screenshot-edensketch"
+);
+edenSketchScreenshots.forEach((element) => {
+  if (element) {
+    element.addEventListener("click", (event) => {
+      window.location.href = "./edensketch";
+    });
+  }
+});
