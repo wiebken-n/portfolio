@@ -58,7 +58,8 @@ const addModal = function (event) {
   const projectsCard = document.getElementsByClassName("screenshots")[0];
   const modalContainer = document.createElement("div");
   const closeInfoText = document.createElement("p");
-  const imageClone = event.target.cloneNode(true);
+  const targetImage = event.target;
+  const imageClone = targetImage.cloneNode(true);
   // create modal
   modalContainer.classList.add("modal-container");
   modalContainer.tabindex = 0;
@@ -71,6 +72,7 @@ const addModal = function (event) {
   });
   imageClone.addEventListener("keydown", (event) => {
     projectsCard.removeChild(modalContainer);
+    targetImage.focus();
   });
   // render modal
   projectsCard.append(modalContainer);
@@ -85,6 +87,11 @@ catherderScreenshots.forEach((element) => {
     element.addEventListener("click", (event) => {
       window.location.href = "./catherder";
     });
+    element.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        window.location.href = "./catherder";
+      }
+    });
   }
 });
 
@@ -95,6 +102,11 @@ edenSketchScreenshots.forEach((element) => {
   if (element) {
     element.addEventListener("click", (event) => {
       window.location.href = "./edensketch";
+    });
+    element.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        window.location.href = "./edensketch";
+      }
     });
   }
 });

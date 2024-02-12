@@ -135,7 +135,8 @@
   transition: all 200ms ease-in-out;
 }
 
-.screenshots figure img:hover {
+.screenshots figure img:hover,
+.screenshots figure img:focus {
   scale: 1.025;
 }
 
