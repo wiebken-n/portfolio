@@ -79,6 +79,7 @@ article {
   box-shadow: 0 0 10px 0px var(--card-shadow);
   scale: 1;
   transition: all 200ms ease-in-out;
+  cursor: default;
 }
 
 #tech li img {
